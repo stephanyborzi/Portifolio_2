@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .nav-link {
+    position: relative;
+    overflow: hidden; /* Para esconder o sublinhado que aparece */
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Altura do sublinhado */
+    width: 100%; /* Ocupa toda a largura do link */
+    background-color: #FFD700; /* Cor do sublinhado amarelo */
+    transform: translateX(-100%); /* Começa fora da tela à esquerda */
+    transition: transform 0.3s ease; /* Transição suave */
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .nav-link:hover::after {
+    transform: translateX(0); /* Move para a posição correta ao passar o mouse */
   }
 }
