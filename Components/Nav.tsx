@@ -1,8 +1,7 @@
-import { Bars3Icon } from "@heroicons/vue/16/solid";
 
 const Nav = () => {
     return (
-        <div className="w-full top-0 h-[12vh] bg-[#8E44F1] shadow-md">
+        <div className="w-full top-0 h-[12vh] bg-[#1C1032] shadow-md">
             <div className="flex items-center justify-between w-[80%] mx-auto h-full">
                 <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
                     Stephany Borzi Marques
