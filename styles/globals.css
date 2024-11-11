@@ -6,6 +6,7 @@
   .nav-link {
     position: relative;
     overflow: hidden; /* Para esconder o sublinhado que aparece */
+    font-family: 'JetBrains Mono', monospace; /* Substitui a tipografia para JetBrains Mono */
   }
 
   .nav-link::after {
@@ -23,4 +24,20 @@
   .nav-link:hover::after {
     transform: translateX(0); /* Move para a posição correta ao passar o mouse */
   }
+}
+
+@keyframes auraMovement {
+  0% {
+    box-shadow: 0 0 15px 3px rgba(168, 104, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(168, 104, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 15px 3px rgba(168, 104, 255, 0.8);
+  }
+}
+
+.aura-effect {
+  animation: auraMovement 2s ease-in-out infinite;
 }

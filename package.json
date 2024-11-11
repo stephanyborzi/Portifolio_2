@@ -11,9 +11,11 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
     "framer-motion": "^11.11.4",
+    "i18next": "^23.16.5",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-i18next": "^15.1.1",
     "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
